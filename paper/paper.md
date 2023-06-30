@@ -68,12 +68,12 @@ now, but only produce monosaccharide compositions of glycans at the lowest level
 GlyTouCan is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
 GlyCosmos is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
 glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis.
-PubChem is a chemical compound database ...[Evan]
+PubChem is an open repository for chemical substances and their biological activities.  It is provided by the National Center for Biotechnology Information, which is part of the National Library of Medicine, an institute of the National Institutes of Health located in the United States of America.  PubChem contains more than 300 million chemical substance descriptions, and a similar number of biological activities.  PubChem contents are provded by more than 925 data contributors and, with millions of monthly users, represents a key resource for scientific researchers. 
 UniProt is a protein database, providing the majority of data using semantic Web technologies. [Jerven]
 
 The tasks of BH23 for the Glyco team were laid out as follows.
-1. Integrate the glycan data in GlyTouCan and PubChem [Evan]
-This involves the analysis of the glycan structures and the chemical representation of data in PubChem.
+1. Integrate the glycan data in GlyTouCan and PubChem
+This involves the analysis of the glycan structures and the chemical representation of data in PubChem.  The MolWURCS and SugarNSplice applications are to be used to determine and isolated glycan containing structures in PubChem using a custom made workflow.  Comparison of the MolWURCS and SugarNSplice output will help to enhance agreement of "what is a glycan?" for future efforts.  Key to this is determining appropriate glycans to put into GlyTouCan.
 
 2. Integration of glycan data from GlyCosmos with UniProt [Jerven]
 
