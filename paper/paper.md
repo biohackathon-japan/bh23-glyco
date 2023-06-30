@@ -20,6 +20,9 @@ authors:
   - name: Akihiro Fujita
     orcid: 0000-0003-3748-7791
     affiliation: 1
+  - name: Masaaki Matsubara
+    orcid: 0000-0001-6809-1568
+    affiliation: 3
 affiliations:
   - name: Soka University
     index: 1
