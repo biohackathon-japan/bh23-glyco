@@ -103,6 +103,10 @@ by mapping these on the fly taking into consideration the equivalent evidence so
 This mapping is done on the fly using a single SPARQL query and can be used from either the [UniProt sparql](https://sparlq.uniprot.org) endpoint or the GlyCosmos one.
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
+Three resources were evaluated for consideration of the criteria for integrating with the glycogene data in GlyCosmos.  Namely, being able to input HGNC and NCBI Gene IDs, being able to obtain variants and phenotype data, comprehensiveness and accuracy.
+1. Human Phenotype Ontology
+2. The Monarch Initiative
+3. TogoVar
 
 ## Update of Glyco-tools
 
@@ -116,10 +120,6 @@ This mapping is done on the fly using a single SPARQL query and can be used from
 ## Annotating entries in PubChem that contain glycans
 
 ## Integration of variant data into GlyCosmos
-Three resources were evaluated for consideration of the criteria for integrating with the glycogene data in GlyCosmos.  Namely, being able to input HGNC and NCBI Gene IDs, being able to obtain variants and phenotype data, comprehensiveness and accuracy.
-1. Human Phenotype Ontology
-2. The Monarch Initiative
-3. TogoVar
 
 ## Acknowledgements
 
