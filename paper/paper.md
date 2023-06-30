@@ -112,9 +112,22 @@ This mapping is done on the fly using a single SPARQL query and can be used from
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
 Three resources were evaluated for consideration of the criteria for integrating with the glycogene data in GlyCosmos.  Namely, being able to input HGNC and NCBI Gene IDs, being able to obtain variants and phenotype data, comprehensiveness and accuracy.
-1. Human Phenotype Ontology
+
+1. Human Phenotype Ontology (HPO)
+  - HPO has a comprehensive list of phenotypes available at https://hpo.jax.org/app/data/annotations.
+  - There is also a downloadable list of [genes to phenotypes](http://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt) on the same page.  This file provides a link between genes and HPO terms. All phenotype terms associated with any disease that is associated with variants in a gene are assigned to that gene in this file. 
+  * This file was in the exact format we were looking for, so we started incorporating this information into the GlyCosmos glycogene entry pages and disease entry pages.
 2. The Monarch Initiative
+  - This initiative provides an integrative data and analytic platform connecting phenotypes to genotypes across species, bridging basic and applied research with semantics-based analysis. The correlation of phenotypic outcomes and disease with genetic variation and environmental factors is a core pursuit in biology and biomedicine.  Thus, the data was very important to take into consideration.
+  - The user interface is easy to use and one can obtain variants, diseases, etc. for any gene specified in any format.
+  - The RDF data could be downloaded from their homepage, but there were many files, and an API or SPARQL endpoint was preferred.
+  * While the data was very rich, we could not find an easy way to obtain a list of variants and phenotypes from a list of genes during the hackathon.
 3. TogoVar
+  - TogoVar is a resource providing an integrated view of variants and clinical significance and outcome data from a variety of resources, including Japanese cohorts.  
+  - The user interface, while slow at times, could be used to easily obtain variants and outcomes from any gene specified in any format.
+  - The [API](https://grch38.togovar.org/api) provided could also be used in a sequential manner.  (1) Obtain the ID for a gene symbol, (2) obtain the variants for each ID, and (3) obtain phenotypes for any variant.
+  - A SPARQL endpoint was also available, but the schema describing the endpoint data needed to be updated.
+  * A simple Python script could be developed to perform the seequence above for individual genes, but bulk processing options were unavailable.
 
 ## Update of Glyco-tools
 
@@ -131,17 +144,22 @@ This functionality is enabled by using the reasoning function defined by the RDF
 Having surveyed Uberon that has a common ancestry concept of material anatomical entity (UBERON:0000465) among ones used in GlyCosmos as tissues from which glycans are sampled, we obtained its subset where that concept is the root one.
 
 ___
-![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
 # Future work
 
 ## Annotating entries in PubChem that contain glycans
 
 ## Integration of variant data into GlyCosmos
+GlyCosmos releases updates of the data and user interface every four months.  In order to update the variants and phenotype data, the latest data of each resource evaluated would need to be retrieved.
+HPO data could be easily obtained via their homepage.
+The Monarch Initiative data need to be further assessed and an easy system for obtaining a list of variants and phenotypes from a list of genes will need to be developed.
+They also provide an API called [BioLink](https://api.monarchinitiative.org/api/) which could be of use in developing this system.
+Once the TogoVar schema is updated, scripts using SPARQL could be developed to perform the sequence of gene -> id -> variant -> phenotype in bulk for all glycogenes in GlyCosmos.
 
 ## Acknowledgements
 
-We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. We are grateful to the organizers for providing this platform and the developers of open source language models. Special thanks to our mentors, advisors, and colleagues for their guidance and support. Without their contributions, our project in linked data standardization with LLMs in bioinformatics would not have been possible.
+We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. 
+We are grateful to the organizers for providing this platform. 
 
 ## References
 
