@@ -14,11 +14,16 @@ authors:
   - name: Evan Bolton
     orcid: 0000-0000-0000-0000
     affiliation: 2
+  - name: Issaku Yamada
+    orcid: 0000-0001-9504-189X
+    affiliation: 3
 affiliations:
   - name: Soka University
     index: 1
   - name: NCBI, PubChem
     index: 2
+  - name: The Noguchi Institute
+    index: 3
 date: 30 June 2023
 cito-bibliography: paper.bib
 event: BH23JP
