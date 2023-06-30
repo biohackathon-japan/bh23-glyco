@@ -53,6 +53,35 @@ authors_short: Kiyoko F. Aoki-Kinoshita \emph{et al.}
 
 # Background
 
+Glycans, or carbohydrate sugar chains, are branched biopolymers of monosaccharides, often found attached to proteins and lipids on the cell surface.  They are found on virtually every cell in the body.
+They are biosynthesized via a complex interaction of multiple enzymes (glycosyltransferases, glycosidases, sulfotransferases, etc.) which, together with sugar nucleotides, generate a wide variety of
+glycans that are co-translationally attached to proteins and lipids.  These glycoproteins and glycolipids (together called glycoconjugates) then reach the cell surface to often act as receptors for
+glycan-binding proteins (lipids), viruses, bacteria, etc.  They may also be secreted into the extracellular matrix.
+
+
+Because there is no sequencing technology for glycans, the glycome is characterized using technologies such as mass spectrometry (MS) and nuclear magnetic resonance (NMR).  MS is a widely used technology
+now, but only produce monosaccharide compositions of glycans at the lowest level of detail.  
+
+GlyTouCan is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
+GlyCosmos is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
+glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis.
+PubChem is a chemical compound database ...[Evan]
+UniProt is a protein database, providing the majority of data using semantic Web technologies. [Jerven]
+
+The tasks of BH23 for the Glyco team were laid out as follows.
+1. Integrate the glycan data in GlyTouCan and PubChem [Evan]
+This involves the analysis of the glycan structures and the chemical representation of data in PubChem.
+
+2. Integration of glycan data from GlyCosmos with UniProt [Jerven]
+
+3. Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
+This involves the investigation of variants and phenotypes in the current life science database landscape.  The glycogenes in GlyCosmos are managed using HGNC symbols and NCBI Gene IDs.
+So resources that could easily provide variants and phenotypes for a list of such genes would be the strongest candidates.  Comprehensiveness and accuracy are also important factors.
+
+4. Update of Glyco-tools 
+This involves updating of software used by the glycomics community.
+
+
 # Outcomes
 
 ## Integration of glycan data from GlyTouCan with PubChem
@@ -79,11 +108,17 @@ by mapping these on the fly taking into consideration the equivalent evidence so
 This mapping is done on the fly using a single SPARQL query and can be used from either the [UniProt sparql](https://sparlq.uniprot.org) endpoint or the GlyCosmos one.
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
+Three resources were evaluated for consideration of the criteria for integrating with the glycogene data in GlyCosmos.  Namely, being able to input HGNC and NCBI Gene IDs, being able to obtain variants and phenotype data, comprehensiveness and accuracy.
+1. Human Phenotype Ontology
+2. The Monarch Initiative
+3. TogoVar
 
 ## Update of Glyco-tools
 
-* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac.
-* 
+* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac. Since this problem was caused by the libraries used, I was able to get it to work by compiling on x86_64 and using Rosetta.
+* In addition, by preparing the application in .app format, the software can be started with a double-click of the mouse without using the command line.
+
+![image](https://github.com/biohackathon-japan/bh23-glyco/assets/2530360/79f94c14-f868-4690-a8aa-e5dfed50b716)
 
 ## Enabling to show upper anatomical concepts at GlyCosmos
 GlyCosmos enables its users to search for glycans, and the result shows information regarding the hit glycans including tissues from which they are sampled.
@@ -92,6 +127,7 @@ Therefore, if the user gets a result of a search that includes a glycan sampled 
 This functionality is enabled by using the reasoning function defined by the RDFS specification and implemented in several RDF triple stores such as Virtuoso.
 Having surveyed Uberon that has a common ancestry concept of material anatomical entity (UBERON:0000465) among ones used in GlyCosmos as tissues from which glycans are sampled, we obtained its subset where that concept is the root one.
 
+___
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
 # Future work
@@ -99,7 +135,6 @@ Having surveyed Uberon that has a common ancestry concept of material anatomical
 ## Annotating entries in PubChem that contain glycans
 
 ## Integration of variant data into GlyCosmos
-
 
 ## Acknowledgements
 
