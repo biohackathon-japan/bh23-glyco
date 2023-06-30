@@ -138,15 +138,14 @@ Three resources were evaluated for consideration of the criteria for integrating
 
 ![image](https://github.com/biohackathon-japan/bh23-glyco/assets/2530360/79f94c14-f868-4690-a8aa-e5dfed50b716)
 
-## Enabling to show upper anatomical concepts at GlyCosmos
-GlyCosmos enables its users to search for glycans, and the result shows information regarding the hit glycans including tissues from which they are sampled.
+## Semantic inferencing to enhance the knowledge in GlyCosmos.
+At this biohackathon, we focsed on enabling the display of higher anatomical concepts in GlyCosmos when referring to anatomical information such as heart tissues, etc.
+GlyCosmos enables users to search for glycans, and the result shows information regarding the given glycans including tissues from which they are sampled.
 Uber-anatomy ontology (Uberon) provides an integrated cross-species anatomy ontology where anatomical concepts such as heart are defined in the conceptually hierarchical structure using the RDFS vocabularies.
-Therefore, if the user gets a result of a search that includes a glycan sampled from a heart, GlyCosmos can show that the glycan is sampled from a primary circulatory organ, too since it is a conceptually upper concept of heart.
+Therefore, if the user obtains a result of a search that includes a glycan sampled from a heart, GlyCosmos can show that the glycan is sampled from a primary circulatory organ, too, since it is a conceptually higher concept of heart.
 This functionality is enabled by using the reasoning function defined by the RDFS specification and implemented in several RDF triple stores such as Virtuoso.
 Having surveyed Uberon that has a common ancestry concept of material anatomical entity (UBERON:0000465) among ones used in GlyCosmos as tissues from which glycans are sampled, we obtained its subset where that concept is the root one.
 
-## Semantic inferencing to enhance the knowledge in GlyCosmos.
-[yayamamo]
 _____
 
 # Future work
