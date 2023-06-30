@@ -23,7 +23,7 @@ authors:
 affiliations:
   - name: Soka University
     index: 1
-  - name: NCBI, PubChem
+  - name: National Center for Biotechnolog Information (NCBI), PubChem
     index: 2
   - name: The Noguchi Institute
     index: 3
@@ -49,7 +49,7 @@ authors_short: Kiyoko F. Aoki-Kinoshita \emph{et al.}
 
 ### update GlyTouCan data
 
-In order to smoother integrations, We decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSFramework.
+In order to smooth integration, we decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSFramework.
 
 ### Updating the accuracy of sugar detection by comparing the results between MolWURCS (MW) and Sugar'n'Splice (SNS) in PubChem. (ChatGPT)
 
@@ -61,13 +61,15 @@ MW vs SNS:
 
 Datasets include PubChem CID to WURCS conversions and unique CID and WURCS lists.
 Analysis includes comparing unique structures and identifying common and unique entries between MW and SNS glycan and biologic datasets.
+
 PubChem-MolWURCS:
 
 Datasets involve PubChem to MolWURCS conversions, WURCS to MOL/SDF conversions, and analysis of successes and failures in conversion.
 Various reasons for failure are identified and categorized.
+
 GlyTouCan-MolWURCS:
 
-Datasets cover GlyTouCan WURCS to WURCSa conversions and WURCSa to MOL/SDF conversions.
+Datasets cover GlyTouCan WURCS to WURCS validation conversions and WURCS to MOL/SDF conversions.
 Analysis includes the success and failure rates of conversions, along with reasons for failures.
 Throughout the document, links to specific datasets and analysis results are provided.
 
