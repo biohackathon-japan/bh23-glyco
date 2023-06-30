@@ -43,6 +43,32 @@ authors_short: Kiyoko F. Aoki-Kinoshita \emph{et al.}
 
 # Background
 
+Glycans, or carbohydrate sugar chains, are branched biopolymers of monosaccharides, often found attached to proteins and lipids on the cell surface.  They are found on virtually every cell in the body.
+They are biosynthesized via a complex interaction of multiple enzymes (glycosyltransferases, glycosidases, sulfotransferases, etc.) which, together with sugar nucleotides, generate a wide variety of
+glycans that are co-translationally attached to proteins and lipids.  These glycoproteins and glycolipids (together called glycoconjugates) then reach the cell surface to often act as receptors for
+glycan-binding proteins (lipids), viruses, bacteria, etc.  They may also be secreted into the extracellular matrix.
+
+
+Because there is no sequencing technology for glycans, the glycome is characterized using technologies such as mass spectrometry (MS) and nuclear magnetic resonance (NMR).  MS is a widely used technology
+now, but only produce monosaccharide compositions of glycans at the lowest level of detail.  
+
+GlyTouCan is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
+GlyCosmos is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
+glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis.
+PubChem is a chemical compound database ...[Evan]
+UniProt is a protein database, providing the majority of data using semantic Web technologies. [Jerven]
+
+The tasks of BH23 for the Glyco team were laid out as follows.
+1. Integrate the glycan data in GlyTouCan and PubChem [Evan]
+This involves the analysis of the glycan structures and the chemical representation of data in PubChem.
+
+2. Integration of glycan data from GlyCosmos with UniProt [Jerven]
+
+3. Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
+
+4. Update of Glyco-tools
+
+
 # Outcomes
 
 ## Integration of glycan data from GlyTouCan with PubChem
