@@ -65,23 +65,23 @@ glycan-binding proteins (lipids), viruses, bacteria, etc.  They may also be secr
 Because there is no sequencing technology for glycans, the glycome is characterized using technologies such as mass spectrometry (MS) and nuclear magnetic resonance (NMR).  MS is a widely used technology
 now, but only produce monosaccharide compositions of glycans at the lowest level of detail.  
 
-GlyTouCan is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
-GlyCosmos is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
+GlyTouCan[@citesAsAuthority:Fujita2021] is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
+GlyCosmos[@citesAsAuthority:Yamada2020] is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
 glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis.
-PubChem is an open repository for chemical substances and their biological activities.  It is provided by the National Center for Biotechnology Information, which is part of the National Library of Medicine, an institute of the National Institutes of Health located in the United States of America.  PubChem contains more than 300 million chemical substance descriptions, and a similar number of biological activities.  PubChem contents are provded by more than 925 data contributors and, with millions of monthly users, represents a key resource for scientific researchers. 
+PubChem[@citesAsAuthority:Kim2023] is an open repository for chemical substances and their biological activities.  It is provided by the National Center for Biotechnology Information, which is part of the National Library of Medicine, an institute of the National Institutes of Health located in the United States of America.  PubChem contains more than 300 million chemical substance descriptions, and a similar number of biological activities.  PubChem contents are provded by more than 925 data contributors and, with millions of monthly users, represents a key resource for scientific researchers.
 UniProt is a protein database, providing the majority of data using semantic Web technologies. [Jerven]
 
 The tasks of BH23 for the Glyco team were laid out as follows.
 1. Integrate the glycan data in GlyTouCan and PubChem
 This involves the analysis of the glycan structures and the chemical representation of data in PubChem.  The MolWURCS and SugarNSplice applications are to be used to determine and isolated glycan containing structures in PubChem using a custom made workflow.  Comparison of the MolWURCS and SugarNSplice output will help to enhance agreement of "what is a glycan?" for future efforts.  Key to this is determining appropriate glycans to put into GlyTouCan.
 
-2. Integration of glycan data from GlyCosmos with UniProt [Jerven]
+2. Integration of glycan data from GlyCosmos with UniProt[@citesAsAuthority:UniProtConsortium2021] [Jerven]
 
 3. Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
 This involves the investigation of variants and phenotypes in the current life science database landscape.  The glycogenes in GlyCosmos are managed using HGNC symbols and NCBI Gene IDs.
 So resources that could easily provide variants and phenotypes for a list of such genes would be the strongest candidates.  Comprehensiveness and accuracy are also important factors.
 
-4. Update of Glyco-tools 
+4. Update of Glyco-tools
 This involves updating of software used by the glycomics community.
 
 5. Semantic inferencing to enhance the knowledge in GlyCosmos.
@@ -92,8 +92,7 @@ This involves organizing the ontologies used in GlyCosmos to enable inferencing,
 ## Integration of glycan data from GlyTouCan with PubChem
 
 ### Update GlyTouCan data
-
-In order to enable smooth integration, we commenced with the release of the GlyTouCan data. We updated the GlyTouCan data by utilizing the latest WURCSFramework.
+In order to enable smooth integration, we commenced with the release of the GlyTouCan data. We updated the GlyTouCan data by utilizing the latest [WURCSFramework](https://gitlab.com/glycoinfo/wurcsframework).
 
 ### Exhaustive analysis for PubChem structures to detect sugars using MolWURCS and Sugar'n'Splice
 To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure fomulae as WURCS. In this time, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
@@ -102,7 +101,7 @@ After the sugar detection using MolWURCS across all of 115,068,739 PubChem entri
 
 ## Integration of glycan data from GlyCosmos with UniProt
 
-UniProt has a long running curation effort around glycosylation (glycan-binding) sites on protein sequences. However, these glycan binding sites do not deeply link 
+UniProt has a long running curation effort around glycosylation (glycan-binding) sites on protein sequences. However, these glycan binding sites do not deeply link
 into glycomics resources such as GlyTouCan, etc. We demonstrated that GlyCosmos may be used to enrich UniProt glycosylation sites (glycosylation annotations)
 by mapping these on-the-fly taking into consideration the equivalent evidence source in UniProt and GlyCosmos. In practice this means when the same glycosylation site is annotated in both GlyCosmos and in UniProt information from the same PubMed source they are considered equivalent.
 
@@ -113,7 +112,7 @@ Three resources were evaluated for consideration of the criteria for integrating
 
 1. Human Phenotype Ontology (HPO)
   - HPO has a comprehensive list of phenotypes available at https://hpo.jax.org/app/data/annotations.
-  - There is also a downloadable list of [genes to phenotypes](http://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt) on the same page.  This file provides a link between genes and HPO terms. All phenotype terms associated with any disease that is associated with variants in a gene are assigned to that gene in this file. 
+  - There is also a downloadable list of [genes to phenotypes](http://purl.obolibrary.org/obo/hp/hpoa/genes_to_phenotype.txt) on the same page.  This file provides a link between genes and HPO terms. All phenotype terms associated with any disease that is associated with variants in a gene are assigned to that gene in this file.
   * This file was in the exact format we were looking for, so we started incorporating this information into the GlyCosmos glycogene entry pages and disease entry pages.
 2. The Monarch Initiative
   - This initiative provides an integrative data and analytic platform connecting phenotypes to genotypes across species, bridging basic and applied research with semantics-based analysis. The correlation of phenotypic outcomes and disease with genetic variation and environmental factors is a core pursuit in biology and biomedicine.  Thus, the data was very important to take into consideration.
@@ -163,9 +162,9 @@ They also provide an API called [BioLink](https://api.monarchinitiative.org/api/
 Once the TogoVar schema is updated, scripts using SPARQL could be developed to perform the sequence of gene -> id -> variant -> phenotype in bulk for all glycogenes in GlyCosmos.
 
 ## Acknowledgements
-We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. 
+We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project.
 We would also like to acknowledge Tamiko Ono and Masaaki Shiota of Soka University for their collaboration remotely during the biohackathon.
-We are grateful to the organizers for providing this platform and a great environment for collaboration and commaraderie. 
+We are grateful to the organizers for providing this platform and a great environment for collaboration and commaraderie.
 
 ## References
 
