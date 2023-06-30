@@ -49,6 +49,10 @@ authors_short: Kiyoko F. Aoki-Kinoshita \emph{et al.}
 
 ## Integration of glycan data from GlyTouCan with PubChem
 
+### update GlyTouCan data
+
+In order to smoother integrations, We decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSframeWORK.
+
 ### Updating the accuracy of sugar detection by comparing the results between MolWURCS (MW) and Sugar'n'Splice (SNS) in PubChem.
 
 Improving MolWURCS performance to integrate glycan data by identifying and analyzing failure cases in PubChem tests.
