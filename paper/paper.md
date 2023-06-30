@@ -85,6 +85,10 @@ Throughout the document, links to specific datasets and analysis results are pro
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
 
+## Update of Glyco-tools
+
+* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac.
+* 
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
