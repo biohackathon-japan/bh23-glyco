@@ -12,7 +12,7 @@ authors:
     orcid: 0000-0002-6662-8015
     affiliation: 1
   - name: Evan Bolton
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-5959-6190
     affiliation: 2
   - name: Issaku Yamada
     orcid: 0000-0001-9504-189X
@@ -49,7 +49,7 @@ authors_short: Kiyoko F. Aoki-Kinoshita \emph{et al.}
 
 ### update GlyTouCan data
 
-In order to smoother integrations, We decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSframeWORK.
+In order to enable a smooth integration, we decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSframeWORK.
 
 ### Updating the accuracy of sugar detection by comparing the results between MolWURCS (MW) and Sugar'n'Splice (SNS) in PubChem. (ChatGPT)
 
