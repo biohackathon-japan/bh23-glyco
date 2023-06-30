@@ -70,8 +70,11 @@ This involves the analysis of the glycan structures and the chemical representat
 2. Integration of glycan data from GlyCosmos with UniProt [Jerven]
 
 3. Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
+This involves the investigation of variants and phenotypes in the current life science database landscape.  The glycogenes in GlyCosmos are managed using HGNC symbols and NCBI Gene IDs.
+So resources that could easily provide variants and phenotypes for a list of such genes would be the strongest candidates.  Comprehensiveness and accuracy are also important factors.
 
-4. Update of Glyco-tools
+4. Update of Glyco-tools 
+This involves updating of software used by the glycomics community.
 
 
 # Outcomes
@@ -113,7 +116,10 @@ This mapping is done on the fly using a single SPARQL query and can be used from
 ## Annotating entries in PubChem that contain glycans
 
 ## Integration of variant data into GlyCosmos
-
+Three resources were evaluated for consideration of the criteria for integrating with the glycogene data in GlyCosmos.  Namely, being able to input HGNC and NCBI Gene IDs, being able to obtain variants and phenotype data, comprehensiveness and accuracy.
+1. Human Phenotype Ontology
+2. The Monarch Initiative
+3. TogoVar
 
 ## Acknowledgements
 
