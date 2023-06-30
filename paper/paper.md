@@ -145,6 +145,3 @@ We would like to thank the fellow participants at BioHackathon 2023 for their co
 
 ## References
 
-1.[@citesAsAuthority:Fujita2021]
-
-2.[@citesAsAuthority:UniProtConsortium2021]
