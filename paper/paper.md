@@ -2,10 +2,8 @@
 title: 'BioHackJP 2023 Report R4: integration of glyco data with chemo-, geno-, lipid-omics and pathway data'
 title_short: 'BioHackJP 2023 Glyco'
 tags:
-  - Linked Data
   - Glycoscience
   - Chemoinformatics
-  - Pathways
   - Proteins
   - Lipids
   - Gene variants
