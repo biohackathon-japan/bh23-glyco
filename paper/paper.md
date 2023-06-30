@@ -17,6 +17,9 @@ authors:
   - name: Issaku Yamada
     orcid: 0000-0001-9504-189X
     affiliation: 3
+  - name: Akihiro Fujita
+    orcid: 0000-0003-3748-7791
+    affiliation: 1
 affiliations:
   - name: Soka University
     index: 1
