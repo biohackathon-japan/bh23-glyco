@@ -20,9 +20,6 @@ authors:
   - name: Akihiro Fujita
     orcid: 0000-0003-3748-7791
     affiliation: 1
-  - name: Masaaki Matsubara
-    orcid: 0000-0001-6809-1568
-    affiliation: 3
 affiliations:
   - name: Soka University
     index: 1
@@ -82,6 +79,10 @@ Analysis includes the success and failure rates of conversions, along with reaso
 Throughout the document, links to specific datasets and analysis results are provided.
 
 ## Integration of glycan data from GlyCosmos with UniProt
+
+UniProt has a long running curation effort arround glyco binding sites. However, these glycan binding sites do not deep link 
+into glycomics resources such as GlyToucan etc. We demonstrated that glycosmos may be used to enrich UniProt glyco site (glycosylation annotations)
+by mapping these on the fly taking into consideration the equivalent evidence source in UniProt and Glycosmos.
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
 
