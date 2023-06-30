@@ -98,11 +98,7 @@ In order to smooth integration, we decided to commence with the forthcoming rele
 ### Exhaustive analysis for PubChem structures to detect sugars using MolWURCS and Sugar'n'Splice
 To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure fomulae as WURCS. In this time, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
 
-The analysis can be separated into the followings:
-- MW vs SNS: Comparison of the results between MolWURCS (MW) and Sugar'n'Splice (SNS)
-  - To updating the accuracy of sugar detection
-- Identifying and analyzing failure cases in conversion between WURCS and MOL/SDF in PubChem and GlyTouCan
-  - To improve MolWURCS performance
+After the sugar detection using MolWURCS across all of 115,068,739 PubChem entries, sugars can be detected from 1,236,644 entries, and 354,183 unique sugars (WURCSs) are extracted. On the other hand, the sugar detection using Sugar'n'Splice indecates that 949,636 entries contains sugars and 93,106 entries contains sugars in terms of biologic. Through this analysis, it is confirmed by both MolWURCS and Sugar'n'Splice-biologic that 86,732 entries contained sugars.
 
 ## Integration of glycan data from GlyCosmos with UniProt
 
