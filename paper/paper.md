@@ -12,7 +12,7 @@ authors:
     orcid: 0000-0002-6662-8015
     affiliation: 1
   - name: Evan Bolton
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0002-5959-6190
     affiliation: 2
   - name: Issaku Yamada
     orcid: 0000-0001-9504-189X
