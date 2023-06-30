@@ -77,8 +77,8 @@ This mapping is done on the fly using a single SPARQL query and can be used from
 
 ## Update of Glyco-tools
 
-* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac.
-* 
+* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac. Since this problem was caused by the libraries used, I was able to get it to work by compiling on x86_64 and using Rosetta.
+* In addition, by preparing the application in .app format, the software can be started with a double-click of the mouse without using the command line.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
