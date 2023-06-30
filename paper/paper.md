@@ -85,15 +85,15 @@ So resources that could easily provide variants and phenotypes for a list of suc
 This involves updating of software used by the glycomics community.
 
 5. Semantic inferencing to enhance the knowledge in GlyCosmos.
-This involves organizing the ontologies used in GlyCosmos to enable inferencing, and incoropration of inferencing rules to generate new knowledge from existing data.
+This involves organizing the ontologies used in GlyCosmos to enable inferencing, and incorporation of inferencing rules to generate new knowledge from existing data.
 
 # Outcomes
 
 ## Integration of glycan data from GlyTouCan with PubChem
 
-### update GlyTouCan data
+### Update GlyTouCan data
 
-In order to smooth integration, we decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSFramework.
+In order to enable smooth integration, we commenced with the release of the GlyTouCan data. We updated the GlyTouCan data by utilizing the latest WURCSFramework.
 
 ### Exhaustive analysis for PubChem structures to detect sugars using MolWURCS and Sugar'n'Splice
 To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure fomulae as WURCS. In this time, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
@@ -102,11 +102,11 @@ After the sugar detection using MolWURCS across all of 115,068,739 PubChem entri
 
 ## Integration of glycan data from GlyCosmos with UniProt
 
-UniProt has a long running curation effort arround glyco binding sites. However, these glycan binding sites do not deep link 
-into glycomics resources such as GlyToucan etc. We demonstrated that glycosmos may be used to enrich UniProt glyco site (glycosylation annotations)
-by mapping these on the fly taking into consideration the equivalent evidence source in UniProt and Glycosmos. In practice this means when the same glycan binding site is annotated in both GlyCosmos and in UniProt information from the same PubMed source they are considereded equivalent.
+UniProt has a long running curation effort around glycosylation (glycan-binding) sites on protein sequences. However, these glycan binding sites do not deeply link 
+into glycomics resources such as GlyTouCan, etc. We demonstrated that GlyCosmos may be used to enrich UniProt glycosylation sites (glycosylation annotations)
+by mapping these on-the-fly taking into consideration the equivalent evidence source in UniProt and GlyCosmos. In practice this means when the same glycosylation site is annotated in both GlyCosmos and in UniProt information from the same PubMed source they are considered equivalent.
 
-This mapping is done on the fly using a single SPARQL query and can be used from either the [UniProt sparql](https://sparlq.uniprot.org) endpoint or the GlyCosmos one.
+This mapping is done on the fly using a single SPARQL query and can be used from either the [UniProt sparql](https://sparlq.uniprot.org) or GlyCosmos endpoint.
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
 Three resources were evaluated for consideration of the criteria for integrating with the glycogene data in GlyCosmos.  Namely, being able to input HGNC and NCBI Gene IDs, being able to obtain variants and phenotype data, comprehensiveness and accuracy.
@@ -134,7 +134,7 @@ Three resources were evaluated for consideration of the criteria for integrating
 
 ![image](https://github.com/biohackathon-japan/bh23-glyco/assets/2530360/79f94c14-f868-4690-a8aa-e5dfed50b716)
 
-## Semantic inferencing to enhance the knowledge in GlyCosmos.
+## Semantic inferencing to enhance the knowledge in GlyCosmos
 At this biohackathon, we focsed on enabling the display of higher anatomical concepts in GlyCosmos when referring to anatomical information such as heart tissues, etc.
 GlyCosmos enables users to search for glycans, and the result shows information regarding the given glycans including tissues from which they are sampled.
 Uber-anatomy ontology (Uberon) provides an integrated cross-species anatomy ontology where anatomical concepts such as heart are defined in the conceptually hierarchical structure using the RDFS vocabularies.
