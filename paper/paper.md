@@ -23,6 +23,9 @@ authors:
   - name: Jerven Bolleman
     orcid: 0000-0002-7449-1266
     affiliation: 4
+  - name: Yasunori Yamamoto
+    orcid: 0000-0002-6943-6887
+    affiliation: 5
 affiliations:
   - name: Soka University
     index: 1
@@ -32,6 +35,8 @@ affiliations:
     index: 3
   - name: SIB Swiss Institute of Bioinformatics
     index: 4
+  - name: Database Center for Life Science
+    index: 5
 date: 30 June 2023
 cito-bibliography: paper.bib
 event: BH23JP
