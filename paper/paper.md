@@ -56,27 +56,9 @@ To integrate glycan data between PubChem and GlyTouCan, we have developed a soft
 
 The analysis can be separated into the followings:
 - MW vs SNS: Comparison of the results between MolWURCS (MW) and Sugar'n'Splice (SNS)
-  - To updating the accuracy of sugar detection by comparing the results between MolWURCS (MW) and Sugar'n'Splice (SNS) in PubChem
+  - To updating the accuracy of sugar detection
 - Identifying and analyzing failure cases in conversion between WURCS and MOL/SDF in PubChem and GlyTouCan
-  - To improve MolWURCS performance to integrate glycan data
-
-The document then presents several datasets and analysis results:
-
-MW vs SNS:
-
-Datasets include PubChem CID to WURCS conversions and unique CID and WURCS lists.
-Analysis includes comparing unique structures and identifying common and unique entries between MW and SNS glycan and biologic datasets.
-
-PubChem-MolWURCS:
-
-Datasets involve PubChem to MolWURCS conversions, WURCS to MOL/SDF conversions, and analysis of successes and failures in conversion.
-Various reasons for failure are identified and categorized.
-
-GlyTouCan-MolWURCS:
-
-Datasets cover GlyTouCan WURCS to WURCS validation conversions and WURCS to MOL/SDF conversions.
-Analysis includes the success and failure rates of conversions, along with reasons for failures.
-Throughout the document, links to specific datasets and analysis results are provided.
+  - To improve MolWURCS performance
 
 ## Integration of glycan data from GlyCosmos with UniProt
 
