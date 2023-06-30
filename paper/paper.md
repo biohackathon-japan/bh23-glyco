@@ -20,6 +20,9 @@ authors:
   - name: Akihiro Fujita
     orcid: 0000-0003-3748-7791
     affiliation: 1
+  - name: Jerven Bolleman
+    orcid: 0000-0002-7449-1266
+    affiliation: 4
 affiliations:
   - name: Soka University
     index: 1
@@ -27,6 +30,8 @@ affiliations:
     index: 2
   - name: The Noguchi Institute
     index: 3
+  - name: SIB Swiss Institute of Bioinformatics
+    index: 4
 date: 30 June 2023
 cito-bibliography: paper.bib
 event: BH23JP
@@ -90,14 +95,16 @@ The analysis can be separated into the followings:
 
 UniProt has a long running curation effort arround glyco binding sites. However, these glycan binding sites do not deep link 
 into glycomics resources such as GlyToucan etc. We demonstrated that glycosmos may be used to enrich UniProt glyco site (glycosylation annotations)
-by mapping these on the fly taking into consideration the equivalent evidence source in UniProt and Glycosmos.
+by mapping these on the fly taking into consideration the equivalent evidence source in UniProt and Glycosmos. In practice this means when the same glycan binding site is annotated in both GlyCosmos and in UniProt information from the same PubMed source they are considereded equivalent.
+
+This mapping is done on the fly using a single SPARQL query and can be used from either the [UniProt sparql](https://sparlq.uniprot.org) endpoint or the GlyCosmos one.
 
 ## Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
 
 ## Update of Glyco-tools
 
-* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac.
-* 
+* GlycanBuilder2, a glycan structure drawing tool, and GlycoWorkbench, a semi-automatic interpretation and annotation tool for glycan mass spectra, have a problem that they do not work on AppleSilicon-based Mac. Since this problem was caused by the libraries used, I was able to get it to work by compiling on x86_64 and using Rosetta.
+* In addition, by preparing the application in .app format, the software can be started with a double-click of the mouse without using the command line.
 
 ![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
 
