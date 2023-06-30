@@ -169,4 +169,4 @@ We are grateful to the organizers for providing this platform and a great enviro
 
 ## References
 
-1. [@citesAsAuthority]
+1. [@citesAsAuthority:Fujita2021]
