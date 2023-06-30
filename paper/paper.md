@@ -51,10 +51,15 @@ authors_short: Kiyoko F. Aoki-Kinoshita \emph{et al.}
 
 In order to smooth integration, we decided to commence with the forthcoming release of the GlyTouCan data. Then, we updated the GlyTouCan data by utilizing the latest WURCSFramework.
 
-### Updating the accuracy of sugar detection by comparing the results between MolWURCS (MW) and Sugar'n'Splice (SNS) in PubChem. (ChatGPT)
+### Exhaustive analysis for PubChem structures to detect sugars using MolWURCS and Sugar'n'Splice
+To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure fomulae as WURCS. In this time, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
 
-Improving MolWURCS performance to integrate glycan data by identifying and analyzing failure cases in PubChem tests.
-Checking GlyTouCan entries to ensure the submission of glycan structures into PubChem and comparing the results between MW and SNS in GlyTouCan.
+The analysis can be separated into the followings:
+- MW vs SNS: Comparison of the results between MolWURCS (MW) and Sugar'n'Splice (SNS)
+  - To updating the accuracy of sugar detection by comparing the results between MolWURCS (MW) and Sugar'n'Splice (SNS) in PubChem
+- Identifying and analyzing failure cases in conversion between WURCS and MOL/SDF in PubChem and GlyTouCan
+  - To improve MolWURCS performance to integrate glycan data
+
 The document then presents several datasets and analysis results:
 
 MW vs SNS:
