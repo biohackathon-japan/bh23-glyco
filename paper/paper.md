@@ -151,6 +151,13 @@ _____
 # Future work
 
 ## Annotating entries in PubChem that contain glycans
+During this BioHackathon, we focused on matching glycans with those in PubChem and mapping between exactly matching structures.
+However, many entries in PubChem contain glycans as a portion of them. At times, multiple glycans may be contained within the same entry in PubChem, connected by linkers or other aglyconcs.
+MolWURCS is able to extract the glycan portion of such data.  By adding annotations indicating the GlyTouCan ID and linking to GlyCosmos into PubChem entries that have contain such glycan information, the following use cases could be addressed.  
+1. How is the glycan inside this glycoconjugate synthesized?
+2. What other biopolymers does the glycan in this compound bind to?  i.e., what other core proteins does this glycan glycosylate?
+3. What lectins recognize this glycan on this glycoconjugate?
+
 
 ## Integration of variant data into GlyCosmos
 GlyCosmos releases updates of the data and user interface every four months.  In order to update the variants and phenotype data, the latest data of each resource evaluated would need to be retrieved.
