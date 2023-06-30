@@ -84,6 +84,8 @@ So resources that could easily provide variants and phenotypes for a list of suc
 4. Update of Glyco-tools 
 This involves updating of software used by the glycomics community.
 
+5. Semantic inferencing to enhance the knowledge in GlyCosmos.
+This involves organizing the ontologies used in GlyCosmos to enable inferencing, and incoropration of inferencing rules to generate new knowledge from existing data.
 
 # Outcomes
 
@@ -143,7 +145,9 @@ Therefore, if the user gets a result of a search that includes a glycan sampled 
 This functionality is enabled by using the reasoning function defined by the RDFS specification and implemented in several RDF triple stores such as Virtuoso.
 Having surveyed Uberon that has a common ancestry concept of material anatomical entity (UBERON:0000465) among ones used in GlyCosmos as tissues from which glycans are sampled, we obtained its subset where that concept is the root one.
 
-___
+## Semantic inferencing to enhance the knowledge in GlyCosmos.
+[yayamamo]
+_____
 
 # Future work
 
@@ -157,9 +161,9 @@ They also provide an API called [BioLink](https://api.monarchinitiative.org/api/
 Once the TogoVar schema is updated, scripts using SPARQL could be developed to perform the sequence of gene -> id -> variant -> phenotype in bulk for all glycogenes in GlyCosmos.
 
 ## Acknowledgements
-
 We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project. 
-We are grateful to the organizers for providing this platform. 
+We would also like to acknowledge Tamiko Ono and Masaaki Shiota of Soka University for their collaboration remotely during the biohackathon.
+We are grateful to the organizers for providing this platform and a great environment for collaboration and commaraderie. 
 
 ## References
 
