@@ -101,9 +101,9 @@ This involves organizing the ontologies used in GlyCosmos to enable inferencing,
 In order to enable smooth integration, we commenced with the release of the GlyTouCan data. We updated the GlyTouCan data by utilizing the latest [WURCSFramework](https://gitlab.com/glycoinfo/wurcsframework).
 
 ### Exhaustive analysis for PubChem structures to detect sugars using MolWURCS and Sugar'n'Splice
-To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure formulae as WURCS[@citesAsAuthority:matsubara2017wurcs]. In this time, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
+To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure formulae.  These sugars are extracted in WURCS format[@citesAsAuthority:matsubara2017wurcs]. During the biohackathon, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
 
-After the sugar detection using MolWURCS across all of 115,068,739 PubChem entries, sugars can be detected from 1,236,644 entries, and 354,183 unique sugars (WURCSs) are extracted. On the other hand, the sugar detection using Sugar'n'Splice indecates that 949,636 entries contains sugars and 93,106 entries contains sugars in terms of biologic. Through this analysis, it is confirmed by both MolWURCS and Sugar'n'Splice-biologic that 86,732 entries contained sugars.
+After the sugar detection using MolWURCS across all of 115,068,739 PubChem entries, sugars could be detected from 1,236,644 entries, and 354,183 unique sugars (WURCSs) were extracted. On the other hand, the sugar detection using Sugar'n'Splice indicated that 949,636 entries contain sugars and that 93,106 entries contain sugars in terms of biologics. Through this analysis, it was confirmed by both MolWURCS and Sugar'n'Splice-biologic that 86,732 entries contained sugars.
 
 ## Integration of glycan data from GlyCosmos with UniProt
 
@@ -140,7 +140,7 @@ Three resources were evaluated for consideration of the criteria for integrating
 ![image](https://github.com/biohackathon-japan/bh23-glyco/assets/2530360/79f94c14-f868-4690-a8aa-e5dfed50b716)
 
 ## Semantic inferencing to enhance the knowledge in GlyCosmos
-At this biohackathon, we focsed on enabling the display of higher anatomical concepts in GlyCosmos when referring to anatomical information such as heart tissues, etc.
+At this biohackathon, we focused on enabling the display of higher anatomical concepts in GlyCosmos when referring to anatomical information such as heart tissues, etc.
 GlyCosmos enables users to search for glycans, and the result shows information regarding the given glycans including tissues from which they are sampled.
 Uber-anatomy ontology (Uberon) provides an integrated cross-species anatomy ontology where anatomical concepts such as heart are defined in the conceptually hierarchical structure using the RDFS vocabularies.
 Therefore, if the user obtains a result of a search that includes a glycan sampled from a heart, GlyCosmos can show that the glycan is sampled from a primary circulatory organ, too, since it is a conceptually higher concept of heart.
