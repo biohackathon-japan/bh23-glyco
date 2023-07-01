@@ -166,6 +166,7 @@ HPO data could be easily obtained via their homepage.
 The Monarch Initiative data need to be further assessed and an easy system for obtaining a list of variants and phenotypes from a list of genes will need to be developed.
 They also provide an API called [BioLink](https://api.monarchinitiative.org/api/) which could be of use in developing this system.
 Once the TogoVar schema is updated, scripts using SPARQL could be developed to perform the sequence of gene -> id -> variant -> phenotype in bulk for all glycogenes in GlyCosmos.
+Moreover, the orthologous mouse variants linked during this biohackathon can also be integrated.  This would be of great utility for glycoscientists who wish to experiment on such variants to study their effects.
 
 ## Acknowledgements
 We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project.
