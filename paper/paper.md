@@ -168,6 +168,9 @@ They also provide an API called [BioLink](https://api.monarchinitiative.org/api/
 Once the TogoVar schema is updated, scripts using SPARQL could be developed to perform the sequence of gene -> id -> variant -> phenotype in bulk for all glycogenes in GlyCosmos.
 Moreover, the orthologous mouse variants linked during this biohackathon can also be integrated.  This would be of great utility for glycoscientists who wish to experiment on such variants to study their effects.
 
+## Incorporation of WikiPathways
+We are developing a glyc-related pathway registration system called GlycoPathwayRepo.  Part of this system could utilize WikiPathways and the PFOCR functionality developed at this biohackathon.  Therefore, this will be evaluated for integration into GlycoPathwayRepo.
+
 ## Acknowledgements
 We would like to thank the fellow participants at BioHackathon 2023 for their collaboration and constructive advice, which greatly influenced our project.
 We would also like to acknowledge Tamiko Ono and Masaaki Shiota of Soka University for their collaboration remotely during the biohackathon.
