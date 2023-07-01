@@ -73,18 +73,24 @@ UniProt is a protein database, providing the majority of data using semantic Web
 
 The tasks of BH23 for the Glyco team were laid out as follows.
 1. Integrate the glycan data in GlyTouCan and PubChem
+
 This involves the analysis of the glycan structures and the chemical representation of data in PubChem.  The MolWURCS and SugarNSplice applications are to be used to determine and isolated glycan containing structures in PubChem using a custom made workflow.  Comparison of the MolWURCS and SugarNSplice output will help to enhance agreement of "what is a glycan?" for future efforts.  Key to this is determining appropriate glycans to put into GlyTouCan.
 
-2. Integration of glycan data from GlyCosmos with UniProt[@citesAsAuthority:UniProtConsortium2021] [Jerven]
+2. Integration of glycan data from GlyCosmos with UniProt[@citesAsAuthority:UniProtConsortium2021] 
+
+While glycosylation site annotations do exist in UniProt, they are simple text.  The glycans binding to many of these sites are already known, but there are no links to the glycan structures (GlyTouCan IDs).  GlyCosmos provides this information in RDF,so it should be possible to re-assess the glycosylation annotations. 
 
 3. Investigation of glycogene variants and phenotypes to integrate with GlyCosmos
+
 This involves the investigation of variants and phenotypes in the current life science database landscape.  The glycogenes in GlyCosmos are managed using HGNC symbols and NCBI Gene IDs.
 So resources that could easily provide variants and phenotypes for a list of such genes would be the strongest candidates.  Comprehensiveness and accuracy are also important factors.
 
 4. Update of Glyco-tools
+
 This involves updating software used by the glycomics community.
 
 5. Semantic inferencing to enhance the knowledge in GlyCosmos.
+
 This involves organizing the ontologies used in GlyCosmos to enable inferencing, and incorporation of inferencing rules to generate new knowledge from existing data.
 
 # Outcomes
