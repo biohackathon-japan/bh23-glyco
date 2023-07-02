@@ -65,10 +65,10 @@ glycan-binding proteins (lipids), viruses, bacteria, etc.  They may also be secr
 Because there is no sequencing technology for glycans, the glycome is characterized using technologies such as mass spectrometry (MS) and nuclear magnetic resonance (NMR).  MS is a widely used technology
 now, but only produce monosaccharide compositions of glycans at the lowest level of detail.  
 
-GlyTouCan [@citesAsAuthority:Fujita2021] is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
-GlyCosmos [@citesAsAuthority:Yamada2020] is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
+GlyTouCan [@Fujita2021] is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
+GlyCosmos [@Yamada2020] is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
 glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis.
-PubChem [@citesAsAuthority:Kim2023] is an open repository for chemical substances and their biological activities.  It is provided by the National Center for Biotechnology Information, which is part of the National Library of Medicine, an institute of the National Institutes of Health located in the United States of America.  PubChem contains more than 300 million chemical substance descriptions, and a similar number of biological activities.  PubChem contents are provided by more than 925 data contributors and, with millions of monthly users, represents a key resource for scientific researchers.
+PubChem [@Kim2023] is an open repository for chemical substances and their biological activities.  It is provided by the National Center for Biotechnology Information, which is part of the National Library of Medicine, an institute of the National Institutes of Health located in the United States of America.  PubChem contains more than 300 million chemical substance descriptions, and a similar number of biological activities.  PubChem contents are provided by more than 925 data contributors and, with millions of monthly users, represents a key resource for scientific researchers.
 UniProt is a protein database, providing the majority of data using semantic Web technologies. [Jerven]
 
 The tasks of BH23 for the Glyco team were laid out as follows.
@@ -76,7 +76,7 @@ The tasks of BH23 for the Glyco team were laid out as follows.
 
 This involves the analysis of the glycan structures and the chemical representation of data in PubChem.  The MolWURCS and SugarNSplice applications are to be used to determine and isolated glycan containing structures in PubChem using a custom made workflow.  Comparison of the MolWURCS and SugarNSplice output will help to enhance agreement of "what is a glycan?" for future efforts.  Key to this is determining appropriate glycans to put into GlyTouCan.
 
-2. Integration of glycan data from GlyCosmos with UniProt [@citesAsAuthority:UniProtConsortium2021] 
+2. Integration of glycan data from GlyCosmos with UniProt [@UniProtConsortium2021] 
 
 While glycosylation site annotations do exist in UniProt, they are simple text.  The glycans binding to many of these sites are already known, but there are no links to the glycan structures (GlyTouCan IDs).  GlyCosmos provides this information in RDF,so it should be possible to re-assess the glycosylation annotations. 
 
@@ -101,7 +101,7 @@ This involves organizing the ontologies used in GlyCosmos to enable inferencing,
 In order to enable smooth integration, we commenced with the release of the GlyTouCan data. We updated the GlyTouCan data by utilizing the latest [WURCSFramework](https://gitlab.com/glycoinfo/wurcsframework).
 
 ### Exhaustive analysis for PubChem structures to detect sugars using MolWURCS and Sugar'n'Splice
-To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure formulae.  These sugars are extracted in WURCS format [@citesAsAuthority:matsubara2017wurcs]. During the biohackathon, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
+To integrate glycan data between PubChem and GlyTouCan, we have developed a software tool, MolWURCS, for extracting sugars, including monosaccharides and glycans, from chemical structure formulae.  These sugars are extracted in WURCS format [@matsubara2017wurcs]. During the biohackathon, we performed exhaustive analysis for all data in PubChem and GlyTouCan using MolWURCS. To complement and compare the result of the sugar detection, we also used the result of Sugar'n'Splice which detects not only sugars but also the other biopolymers including nucleic acids and amino acids.
 
 After the sugar detection using MolWURCS across all of 115,068,739 PubChem entries, sugars could be detected from 1,236,644 entries, and 354,183 unique sugars (WURCSs) were extracted. On the other hand, the sugar detection using Sugar'n'Splice indicated that 949,636 entries contain sugars and that 93,106 entries contain sugars in terms of biologics. Through this analysis, it was confirmed by both MolWURCS and Sugar'n'Splice-biologic that 86,732 entries contained sugars.
 
