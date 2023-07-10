@@ -66,7 +66,7 @@ Because there is no sequencing technology for glycans, the glycome is characteri
 now, but only produce monosaccharide compositions of glycans at the lowest level of detail.  
 
 GlyTouCan (Fujita et al., 2021) is the international glycan repository which assigns unique accession numbers to glycans; it serves an important role in the interoperability of glycan-related databases and Web resources.
-GlyCosmos (Yamada et al., 2020)] is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
+GlyCosmos (Yamada et al., 2020) is a Web portal for glycoscience data, using semantic Web technologies to integrate heterogeneous data related to glycans.  It currently contains information about glycogenes, glycoproteins,
 glycolipids, pathways, and diseases, in addition to providing various tools for glycan analysis.
 PubChem (Kim et al., 2023) is an open repository for chemical substances and their biological activities.  It is provided by the National Center for Biotechnology Information, which is part of the National Library of Medicine, an institute of the National Institutes of Health located in the United States of America.  PubChem contains more than 300 million chemical substance descriptions, and a similar number of biological activities.  PubChem contents are provided by more than 925 data contributors and, with millions of monthly users, represents a key resource for scientific researchers.
 UniProt (UniProtConsortium, 2021) is a protein database, providing the majority of data using semantic Web technologies.
