@@ -178,3 +178,15 @@ We are grateful to the organizers for providing this platform and a great enviro
 
 ## References
 
+1. Fujita, Akihiro, Nobuyuki P Aoki, Daisuke Shinmachi, Masaaki Matsubara, Shinichiro Tsuchiya, Masaaki Shiota, Tamiko Ono, Issaku Yamada, and Kiyoko F Aoki-Kinoshita. "The international glycan repository GlyTouCan version 3.0." *Nucleic Acids Research* 49, no. D1 (2021): D1529-D1533. doi: [10.1093/nar/gkaa947](https://doi.org/10.1093/nar/gkaa947).
+
+2. UniProt Consortium. "UniProt: the universal protein knowledgebase in 2023." *Nucleic Acids Research* 51, no. D1 (2023): D523-D531. doi: [10.1093/nar/gkac1052](https://doi.org/10.1093/nar/gkac1052).
+
+3. Kim, Sunghwan, Jie Chen, Tiejun Cheng, Asta Gindulyte, Jia He, Siqian He, Qingliang Li, Benjamin A Shoemaker, Paul A Thiessen, Bo Yu, et al. "PubChem 2023 update." *Nucleic Acids Research* 51, no. D1 (2023): D1373-D1380. doi: [10.1093/nar/gkac956](https://doi.org/10.1093/nar/gkac956).
+
+4. Yamada, Issaku, Masaaki Shiota, Daisuke Shinmachi, Tamiko Ono, Shinichiro Tsuchiya, Masae Hosoda, Akihiro Fujita, Nobuyuki P Aoki, Yu Watanabe, Noriaki Fujita, et al. "The GlyCosmos Portal: a unified and comprehensive web resource for the glycosciences." *Nature Methods* 17, no. 7 (2020): 649-650. doi: [10.1038/s41592-020-0879-8](https://doi.org/10.1038/s41592-020-0879-8).
+
+5. Matsubara, Masaaki, Kiyoko F Aoki-Kinoshita, Nobuyuki P Aoki, Issaku Yamada, and Hisashi Narimatsu. "WURCS 2.0 update to encapsulate ambiguous carbohydrate structures." *Journal of Chemical Information and Modeling* 57, no. 4 (2017): 632-637. doi: [10.1021/acs.jcim.6b00650](https://doi.org/10.1021/acs.jcim.6b00650).
+
+6. Mitsuhashi, Nobutaka, Licht Toyo-Oka, Toshiaki Katayama, Minae Kawashima, Shuichi Kawashima, Kazunori Miyazaki, and Toshihisa Takagi. "TogoVar: A comprehensive Japanese genetic variation database." *Human Genome Variation* 9, no. 1 (2022): 44. doi: [10.1038/s41439-022-00222-9](https://doi.org/10.1038/s41439-022-00222-9).
+
